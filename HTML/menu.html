@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <!-- Tailwind CSS link -->
+    <link rel="stylesheet" href="../src/output.css" />
+    <!-- Cnd link for fontawesom -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-white dark:bg-third">
+    <!-- header -->
+    <header
+      class="bg-secondary w-full h-30 z-20 top-0 start-0 border-b border-default place-content-center relative mb-[69px]"
+    >
+      <nav class="border border-1 border-white w-11/12 justify-self-center">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <div class="block py-2 px-3 text-white rounded md:border-0 text-lg">
+            Caffeine
+          </div>
+          <div class="flex items-center md:order-2">
+            <!-- light and dark mode -->
+            <div class="flex px-3 border-r-2 border-white">
+              <button id="darkAndLight" class="text-white text-lg" onclick="handleClick()">
+                Dark Mode
+              </button>
+            </div>
+            <!-- search icon -->
+            <div class="relative hidden md:block">
+              <div class="flex items-center ps-3 pointer-events-none">
+                <svg
+                  class="w-6 h-6 text-white"
+                  aria-hidden="false"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                    d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <!-- button click menu -->
+            <button
+              data-collapse-toggle="navbar-search"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
+              aria-controls="navbar-search"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-width="2"
+                  d="M5 7h14M5 12h14M5 17h14"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 bg-secondary"
+            id="navbar-search"
+          >
+            <!-- menu -->
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 text-lg"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white rounded hover:bg-third md:hover:bg-transparent md:border-0 md:hover:text-third md:p-0 md:dark:hover:bg-transparent"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white rounded hover:bg-third md:hover:bg-transparent md:border-0 md:hover:text-third md:p-0 md:dark:hover:bg-transparent"
+                  >Menu</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white rounded hover:bg-third md:hover:bg-transparent md:border-0 md:hover:text-third md:p-0 md:dark:hover:bg-transparent"
+                  >About Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main -->
+    <main class="grid gap-y-[69px] mb-[69px] bg-white dark:bg-third">
+      <h1
+        class="text-center font-bold text-title sm:text-title md:text-main lg:text-main"
+      >
+        Best Selling Items
+      </h1>
+      <div
+        class="bg-white gap-x-5 gap-y-20 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 container mx-auto bg-white dark:bg-third"
+      >
+        <!-- Card-1 -->
+        <div class="w-auto h-auto bg-primary rounded-t-lg place-self-center">
+          <div class="border-3 rounded-t-lg px-[30px] pt-[40px]">
+            <img
+              src="../img/cappucino.jpg"
+              alt="capucino"
+              class="w-[340px] h-[340px] border-3 justify-self-center"
+            />
+            <h2 class="text-title font-medium text-center p-3">Cappuccino</h2>
+          </div>
+          <button
+            class="text-white text-head bg-secondary w-12/12 h-[77px] border-x-3 border-b-3 border-secondary hover:bg-third sm:hover:bg-third md:hover:bg-third lg:hover:bg-third"
+          >
+            Order Now
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <!-- Card-2 -->
+        <div class="w-auto h-auto bg-primary rounded-t-lg place-self-center">
+          <div class="border-3 rounded-t-lg px-[30px] pt-[40px]">
+            <img
+              src="../img/hot latte.png"
+              alt="Hot Latte"
+              class="w-[340px] h-[340px] border-3 justify-self-center"
+            />
+            <h2 class="text-title font-medium text-center p-3">Hot Latter</h2>
+          </div>
+          <button
+            class="text-white text-head bg-secondary w-12/12 h-[77px] border-x-3 border-b-3 border-secondary hover:bg-third sm:hover:bg-third md:hover:bg-third lg:hover:bg-third"
+          >
+            Order Now
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <!-- Card-3 -->
+        <div class="w-auto h-auto bg-primary rounded-t-lg place-self-center">
+          <div class="border-3 rounded-t-lg px-[30px] pt-[40px]">
+            <img
+              src="../img/ice latte.png"
+              alt="ice latte"
+              class="w-[340px] h-[340px] border-3 justify-self-center"
+            />
+            <h2 class="text-title font-medium text-center p-3">Ice Latter</h2>
+          </div>
+          <button
+            class="text-white text-head bg-secondary w-12/12 h-[77px] border-x-3 border-b-3 border-secondary hover:bg-third sm:hover:bg-third md:hover:bg-third lg:hover:bg-third"
+          >
+            Order Now
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <!-- Card-4 -->
+        <div class="w-auto h-auto bg-primary rounded-t-lg place-self-center">
+          <div class="border-3 rounded-t-lg px-[30px] pt-[40px]">
+            <img
+              src="../img/ice mocha.jpg"
+              alt="ice mocha"
+              class="w-[340px] h-[340px] border-3 justify-self-center"
+            />
+            <h2 class="text-title font-medium text-center p-3">Ice Mocha</h2>
+          </div>
+          <button
+            class="text-white text-head bg-secondary w-12/12 h-[77px] border-x-3 border-b-3 border-secondary hover:bg-third sm:hover:bg-third md:hover:bg-third lg:hover:bg-third"
+          >
+            Order Now
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <!-- Card-5 -->
+        <div class="w-auto h-auto bg-primary rounded-t-lg place-self-center">
+          <div class="border-3 rounded-t-lg px-[30px] pt-[40px]">
+            <img
+              src="../img/americano.jpg"
+              alt="americano"
+              class="w-[340px] h-[340px] border-3 justify-self-center"
+            />
+            <h2 class="text-title font-medium text-center p-3">Americano</h2>
+          </div>
+          <button
+            class="text-white text-head bg-secondary w-12/12 h-[77px] border-x-3 border-b-3 border-secondary hover:bg-third sm:hover:bg-third md:hover:bg-third lg:hover:bg-third"
+          >
+            Order Now
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <!-- Card-6 -->
+        <div class="w-auto h-auto bg-primary rounded-t-lg place-self-center">
+          <div class="border-3 rounded-t-lg px-[30px] pt-[40px]">
+            <img
+              src="../img/chocolate.png"
+              alt="chocolate"
+              class="w-[340px] h-[340px] border-3 justify-self-center"
+            />
+            <h2 class="text-title font-medium text-center p-3">Chocolate</h2>
+          </div>
+          <button
+            class="text-white text-head bg-secondary w-12/12 h-[77px] border-x-3 border-b-3 border-secondary hover:bg-third sm:hover:bg-third md:hover:bg-third lg:hover:bg-third"
+          >
+            Order Now
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="bg-secondary grid">
+      <div
+        class="grid gap-[50px] grid-cols-1 sm:grid-cols-1 sm:gap-[30px] md:grid-cols-3 md:gap-[20px] lg:grid-cols-3 lg:gap-[207px] container mx-auto"
+      >
+        <!-- part-1 -->
+        <div class="p-2 border-x-2 border-third">
+          <div
+            class="w-auto bg-primary mb-10 rounded-[5px] border-2 border-white"
+          >
+            <h2 class="text-center text-title font-medium p-12">Caffeine</h2>
+          </div>
+          <p class="text-description text-white pb-4">
+            Enjoy Better And Better Quality Coffee with Caffeine.
+          </p>
+        </div>
+        <!-- part-2 -->
+        <div
+          class="text-white text-description w-auto content-center grid gap-5"
+        >
+          <p>Contact Us</p>
+          <div>
+            <p>Caffeine@Gmail.com</p>
+            <div class="flex">
+              <p>Call Us:</p>
+              <p class="text-third">(+855) 15 799 187</p>
+            </div>
+            <div class="flex">
+              <p>Text Us:</p>
+              <p class="text-third">(+855) 15 799 187</p>
+            </div>
+          </div>
+          <p class="text-third">Street 2004 Tuek Thla Phnom Penh Cambodia</p>
+        </div>
+        <!-- part-3 -->
+        <div class="w-auto p-5 border-x-2 border-third grid gap-y-5">
+          <img
+            src="../img/coffee footer.png"
+            alt="footer"
+            class="border-2 border-third"
+          />
+          <p class="text-description text-white">Follow Us</p>
+          <div class="flex">
+            <div
+              class="w-[30px] h-[30px] bg-primary rounded-full grid content-center justify-center mr-3"
+            >
+              <img
+                src="../img/facebook-brands-solid.png"
+                alt="facebook"
+                class="w-5 h-5"
+              />
+            </div>
+            <div
+              class="w-[30px] h-[30px] bg-primary rounded-full grid content-center justify-center mr-3"
+            >
+              <img
+                src="./img/youtube-brands-solid.png"
+                alt="youtube"
+                class="w-5 h-5 place-self-center"
+              />
+            </div>
+            <div
+              class="w-[30px] h-[30px] bg-primary rounded-full grid content-center justify-center mr-3"
+            >
+              <img
+                src="../img/instagram-brands-solid.png"
+                alt="instagram"
+                class="w-5 h-5 place-self-center"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t-2 border-third flex justify-center h-20 pt-3">
+        <p class="text-description text-white">Copyright: 2026 Caffeine</p>
+      </div>
+    </footer>
+    <!-- Java Script -->
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="../Javascript/menu.js"></script>
+  </body>
+</data-theme=>
