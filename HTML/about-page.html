@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caffeine - About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a120b',    // Very dark brown
+                        secondary: '#e5d9c4',  // Light cream/beige
+                        third: '#3c2a21',      // Medium dark brown for hover states
+                        accent: '#c0824e',     // Tan color for icons/boxes
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header / Navbar -->
+    <header class="bg-primary py-4 sm:py-6 px-4 sm:px-8 lg:px-12">
+        <nav class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0 border border-gray-700 p-3">
+            <div class="text-white font-bold text-xl">Caffeine</div>
+
+            <ul class="flex flex-wrap justify-center gap-x-4 sm:gap-x-8 gap-y-2 text-gray-300 text-xs sm:text-sm uppercase tracking-wide">
+                <li><a href="#" class="hover:text-secondary transition">Home</a></li>
+                <li><a href="#" class="hover:text-secondary transition">Menu</a></li>
+                <li><a href="#" class="hover:text-secondary transition">About Us</a></li>
+            </ul>
+
+            <div class="flex items-center space-x-4 sm:space-x-6 md:border-l border-gray-700 md:pl-6">
+                <button class="text-gray-300 text-xs sm:text-sm hover:text-secondary">Dark Mode</button>
+                <button class="text-secondary hover:text-secondary">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About Intro Section -->
+    <section class="max-w-4xl mx-auto text-center py-10 sm:py-16 px-4 sm:px-6">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-8">About Us</h1>
+        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+            Welcome to Caffeine. Every cup we pour is crafted with care, but these are the true standouts that our community can't get enough of. From the perfect balance of rich espresso to our velvety smooth milk textures, these crowd favorites have earned their spot at the top. Take a look at what everyone is drinking and find your new go-to brew today.
+        </p>
+    </section>
+
+    <!-- Content Section: Image and Timeline -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 pb-16 sm:pb-24">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-16 items-start">
+
+            <!-- Left: Barista Image -->
+            <div class="w-full">
+                <img src="./image1.jpg"
+                     alt="Barista making coffee"
+                     class="w-full h-auto object-cover shadow-xl rounded-sm">
+            </div>
+
+            <!-- Right: Content & Timeline -->
+            <div class="flex items-start sm:items-center h-full">
+
+                <!-- Timeline -->
+                <div class="flex flex-col items-center mr-4 sm:mr-8 shrink-0">
+
+                    <!-- Item 1 -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-[#d8b28a] flex items-center justify-center z-10">
+                            <i class="fa-solid fa-seedling text-black text-sm sm:text-lg"></i>
+                        </div>
+                        <div class="w-[2px] h-20 sm:h-28 bg-[#d8b28a]"></div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-[#d8b28a] flex items-center justify-center z-10">
+                            <i class="fa-solid fa-seedling text-black text-sm sm:text-lg"></i>
+                        </div>
+                        <div class="w-[2px] h-20 sm:h-28 bg-[#d8b28a]"></div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-[#d8b28a] flex items-center justify-center z-10">
+                            <i class="fa-solid fa-seedling text-black text-sm sm:text-lg"></i>
+                        </div>
+                        <div class="w-[2px] h-20 sm:h-28 bg-[#d8b28a]"></div>
+                    </div>
+
+                    <!-- Last Item -->
+                    <div class="w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-[#d8b28a] flex items-center justify-center">
+                        <i class="fa-solid fa-seedling text-black text-sm sm:text-lg"></i>
+                    </div>
+
+                </div>
+
+                <!-- Text Content -->
+                <div class="flex-1 min-w-0">
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">The Journey from Farm to Cup</h2>
+                    <p class="text-gray-600 text-sm mb-8 sm:mb-12 leading-relaxed">
+                        Every cup we pour is crafted with care, the true coffee standouts that our community can't get enough of. Find the most perfect balance of rich espresso to our velvety smooth milk textures. <br><br>
+                        From deep coffee favorites used as we crowd-made network because nod for the positive earthen our text smooth is enough to behave.
+                    </p>
+
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Our Origins</h2>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                        Donec dolore nate ner noor made cores, omer macoum oat ir om our community cant get enough of; rich espresso to have the smooth milk textures.
+                    </p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Our Origins make luvs seur sli neee emeugal tow fran vwnas - und now in minutes tn mate tn sustfind your new partitno the arttime.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white pt-12 sm:pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12 border-t border-gray-800 pt-10 sm:pt-12 pb-10 sm:pb-12">
+
+            <!-- Footer Col 1 -->
+            <div class="flex flex-col">
+                <div class="bg-secondary text-primary p-8 sm:p-10 flex items-center justify-center mb-6 rounded-sm">
+                    <span class="text-2xl sm:text-3xl font-bold">Caffeine</span>
+                </div>
+                <p class="text-gray-400 text-sm">Enjoy Better And Better Quality Coffee With Caffeine.</p>
+            </div>
+
+            <!-- Footer Col 2: Contact -->
+            <div class="flex flex-col space-y-4">
+                <h3 class="font-bold text-lg mb-2">Contact Us</h3>
+                <p class="text-gray-400 text-sm">Caffeine@Gmail.com</p>
+                <p class="text-gray-400 text-sm">Call Us: (+855) 15 799 187</p>
+                <p class="text-gray-400 text-sm">Text Us: (+855) 15 799 187</p>
+                <p class="text-gray-400 text-sm mt-4">
+                    Street 2004 Tuek Thla<br>
+                    Phnom Penh Cambodia
+                </p>
+            </div>
+
+            <!-- Footer Col 3: Follow -->
+            <div class="flex flex-col">
+                <img src="./coffee.jpg"
+                     alt="Coffee cup" class="w-full h-40 object-cover rounded-sm border border-gray-700 mb-6">
+
+                <h3 class="font-bold text-lg mb-4">Follow Us</h3>
+                <div class="flex space-x-3">
+                    <a href="#" class="w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-primary hover:bg-third hover:text-white transition-colors duration-300">
+                        <i class="fa-brands fa-facebook-f text-xs"></i>
+                    </a>
+                    <a href="#" class="w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-primary hover:bg-third hover:text-white transition-colors duration-300">
+                        <i class="fa-brands fa-youtube text-xs"></i>
+                    </a>
+                    <a href="#" class="w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-primary hover:bg-third hover:text-white transition-colors duration-300">
+                        <i class="fa-brands fa-instagram text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Bar -->
+        <div class="border-t border-gray-800 py-6 text-center text-xs text-gray-500">
+            Copyright: 2028 Caffeine
+        </div>
+    </footer>
+
+</body>
+</html>
