@@ -1,26 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Alien+Block&display=swap');
+/* Tailwind CSS */
 @import "tailwindcss";
-
-/* flow bite */
+/* Flowbite */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @import "flowbite/src/themes/default";
-/* flow bite plugin  */
+/* plugin */
 @plugin "flowbite/plugin";
-
 @source "../node_modules/flowbite";
-
-@theme{
-    --color-primary: oklch(47% 0.157 37.304);
-    --color-secondary:oklch(95.4% 0.038 75.164);
-    --color-third:oklch(90.1% 0.076 70.697);
+    /* color */
+   @theme{
+    --color-primary: #E7D7BD;
+    --color-secondary:#1B1107;
+    --color-third:#DCB288;
+    /* text */
+    --text-description: 18px;
+    --text-head: 20px;
+    --text-title: 40px;
+    --text-main: 60px;
 }
-
-/* Preline UI */
-/* @source "./node_modules/preline/dist/*.js"; */
-/* @import "../node_modules/preline/variants.css"; */
-
-/* Plugins */
-/* @plugin "@tailwindcss/forms"; */
-
-/* Preline Themes */
-/* @import "../node_modules/preline/css/themes/theme.css"; */
+/* dark */
+@custom-variant dark (&:where(.dark, .dark *));
